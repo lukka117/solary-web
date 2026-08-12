@@ -6,11 +6,11 @@ import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(ScrollTrigger);
 
 const GALLERY_ITEMS = [
-  { src: '/gallery/solary-1.png', caption: 'Solary - One view after the other' },
-  { src: '/gallery/solary-2.png', caption: 'Solary - One view after the other' },
-  { src: '/gallery/solary-3.png', caption: 'Solary - One view after the other' },
-  { src: '/gallery/solary-4.jpeg', caption: 'Solary - One view after the other' },
-  { src: '/gallery/solary-5.png', caption: 'Solary - One view after the other' },
+  { src: `${import.meta.env.BASE_URL}gallery/solary-1.png`, caption: 'Solary - One view after the other' },
+  { src: `${import.meta.env.BASE_URL}gallery/solary-2.png`, caption: 'Solary - One view after the other' },
+  { src: `${import.meta.env.BASE_URL}gallery/solary-3.png`, caption: 'Solary - One view after the other' },
+  { src: `${import.meta.env.BASE_URL}gallery/solary-4.jpeg`, caption: 'Solary - One view after the other' },
+  { src: `${import.meta.env.BASE_URL}gallery/solary-5.png`, caption: 'Solary - One view after the other' },
 ];
 
 /** Extra scroll (px) the section stays pinned after the last card is fully visible */
