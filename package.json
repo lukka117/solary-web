@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node scripts/use-vite-index.mjs && vite",
+    "build": "node scripts/use-vite-index.mjs && vite build",
+    "pages": "npm run build && node scripts/publish-pages-root.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
